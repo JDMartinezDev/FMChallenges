@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit');
+
+body {
+	height: 100vh;
+	width: 100vw;
+	background: #d5e1ef;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.qr-card {
+	background-color: white;
+	width: 20%;
+	padding: 15px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.qr-card img {
+	position: relative;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.qr-card section {
+	font-family: 'Outfit', sans-serif;
+	text-align: center;
+	padding: 5px 5px;
+}
+
+.qr-card-title {
+	font-weight: bold;
+	font-size: 23px;
+	color: hsl(218, 44%, 22%);
+	margin: 10px 0;
+}
+
+.qr-card-info {
+	font-size: 15px;
+	font-weight: 400;
+	padding: 0px 5px;
+	color: hsl(220, 15%, 55%);
+}
+
+@media (max-width: 375px) {
+	.qr-card {
+		width: 80%;
+	}
+}
