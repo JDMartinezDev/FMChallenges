@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import { ThanskCard } from './components/ThanksCard'
 import { ReportCard } from './components/ReportCard'
+
 let grades = [1,2,3,4,5]
 
 

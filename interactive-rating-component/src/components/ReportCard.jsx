@@ -1,8 +1,10 @@
+import icon from '../../public/icon-star.svg'
+
 export const ReportCard = ({ selected, grades, handleClick, handleSubmit}) => {
     return(
         <div className='reportCard'>
         <span id="star">
-          <img src='../public/images/icon-star.svg'></img>
+          <img alt='star icon'src={icon}></img>
         </span>
         <div className='info'>
           <h2>How did we do?</h2>

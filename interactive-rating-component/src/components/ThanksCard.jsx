@@ -1,7 +1,9 @@
+import thanksImg from '../../public/illustration-thank-you.svg'
+
 export const ThanskCard = ({grade}) =>{
     return (
         <div className='thanksCard'>
-        <img src='../public/images/illustration-thank-you.svg'></img>
+        <img alt='Grade submited' src={thanksImg}></img>
         <p id='result'>You selected {grade} out of 5</p>
         <div className='regards'>
           <h2>Thank you!</h2>
