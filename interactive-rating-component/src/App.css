@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+:root {
+  --white: rgb(255, 255, 255);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --orange: hsl(25, 97%, 53%);
+}
+
+body,
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Overpass", sans-serif;
+  background: var(--very-dark-blue);
+}
+
+#root {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.reportCard {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  gap: 20px;
+  /* justify-content: space-around; */
+  border-radius: 20px;
+  color: white;
+  background: radial-gradient(circle at top center, hsla(213, 19%, 18%, 0.8) 1%,hsla(213, 19%, 18%, 0.9) 5%,hsl(213, 19%, 18%) 30%,hsl(214.29deg 22.58% 12.16%));
+  /* display:none; */
+  /* height: 50%; */
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  word-spacing: 0.1rem;
+  font-weight: 400;
+}
+
+#star{
+  width: 50px;
+  height: 50px;
+  background-color: rgba(128, 128, 128, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#star img{
+  width: 50%;
+}
+
+.reportCard h2 {
+  color: var(--white);
+}
+
+.info p {
+  color: var(--medium-grey);
+  font-size: 15px;
+  /* word-spacing: 0.2rem; */
+}
+
+.grades {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.grade {
+  background: var(--light-grey);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.1);
+  color: var(--medium-grey);
+  cursor: pointer;
+  transition: all ease-in 0.1s;
+  border: none;
+}
+
+.gradeCurrent{
+  background-color: var(--light-grey);
+  color: var(--white);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  border: none;
+}
+
+.grade:hover{
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.gradeurrent{
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+.smbtButton {
+  padding: 12px;
+  border-radius: 30px;
+  background-color: var(--orange);
+  color: var(--white);
+  letter-spacing: 0.1rem;
+  border:none;
+  font-weight: 700;
+  transition: ease-in 0.1s;
+}
+
+.smbtButton:hover{
+  background: var(--white);
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.thanksCard{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  padding: 45px;
+  justify-content: space-around;
+  border-radius: 20px;
+  color: white;
+  background: radial-gradient(circle at top center, hsla(213, 19%, 18%, 0.8) 1%,hsla(213, 19%, 18%, 0.9) 5%,hsl(213, 19%, 18%) 30%,hsl(214.29deg 22.58% 12.16%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.regards{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.regards p {
+  font-weight: 100;
+  font-size: 15px;
+  color:var(--light-grey);
+}
+
+.thanksCard img{
+  width: 50%;
+}
+
+#result{
+  background-color: rgba(128, 128, 128, 0.1);
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: var(--orange);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media (max-width: 500px){
+  .reportCard{
+    width: 90%;
+    gap:30px
+  }
+  .thanksCard{
+    width: 90%;
+    gap:30px
+  }
+}
