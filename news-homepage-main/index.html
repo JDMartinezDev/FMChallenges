@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" lang="en" content="text/html" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="index.js" defer></script>
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
     <div class="overlay"></div>
     <aside id="menu" class="hide-aside">
-      <button id="close-btn">
+      <button id="close-btn" aria-label="close-btn">
         <img alt="close icon" src="./assets/images/icon-menu-close.svg" />
       </button>
       <nav>
@@ -34,8 +34,8 @@
           <li>Categories</li>
         </ul>
       </nav>
-      <button id="menu-btn">
-        <img src="./assets/images/icon-menu.svg" />
+      <button id="menu-btn" aria-label="menu-btn">
+        <img alt="show menu icon" src="./assets/images/icon-menu.svg" />
       </button>
     </header>
     <main class="news-table">
@@ -66,18 +66,18 @@
         <h1>New</h1>
         <div class="news-container">
           <div class="recent-news">
-            <h3>Hydrogen VS Electric Cars</h3>
+            <h2>Hydrogen VS Electric Cars</h2>
             <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
           </div>
           <div class="recent-news">
-            <h3>The Downsides of AI Artistry</h3>
+            <h2>The Downsides of AI Artistry</h2>
             <p>
               What are the possible adverse effects of on-demand AI image
               generation?
             </p>
           </div>
           <div class="recent-news">
-            <h3>Is VC Funding Drying Up?</h3>
+            <h2>Is VC Funding Drying Up?</h2>
             <p>
               Private funding by VC firms is down 50% YOY. We take a look at
               what that means.
@@ -89,7 +89,7 @@
         <div class="card">
           <img alt="news 1 image" src="./assets/images/image-retro-pcs.jpg" />
           <section>
-            <h1>01</h1>
+            <h3>01</h3>
             <h4>Reviving Retro PCs</h4>
             <p>What happens when old PCs are given modern upgrades?</p>
           </section>
@@ -97,7 +97,7 @@
         <div class="card">
           <img alt="news 2 image" src="./assets/images/image-top-laptops.jpg" />
           <section>
-            <h1>02</h1>
+            <h3>02</h3>
             <h4>Top 10 Laptops of 2022</h4>
             <p>Our best picks for various needs and budgets.</p>
           </section>
@@ -107,7 +107,7 @@
             alt="news 3 image"
             src="./assets/images/image-gaming-growth.jpg" />
           <section>
-            <h1>03</h1>
+            <h3>03</h3>
             <h4>The Growth of Gaming</h4>
             <p>How the pandemic has sparked fresh opportunities.</p>
           </section>
@@ -116,4 +116,3 @@
     </main>
   </body>
 </html>
-<script type="text/javascript" src="index.js"></script>
