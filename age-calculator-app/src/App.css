@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap");
+
+body,
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 94%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 50vw;
+  /* min-height: 50vh; */
+  padding: 5%;
+  border-radius: 20px 20px 200px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 1rem;
+  overflow: hidden;
+  position: relative;
+  padding: 2rem 3.5rem;
+}
+
+.dateInput {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+  gap: 1.5rem;
+  padding: 2.8rem 0;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+
+.result {
+  width: 95%;
+  max-height: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 1rem;
+}
+
+.inputField {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-family: "Poppins", sans-serif;
+  overflow: auto;
+  width: 23%;
+  color: darkgray;
+}
+
+.inputFieldInvalid {
+  border: 1px solid hsl(0, 100%, 50%, 50%);
+  font-size: 32px;
+  padding: 1rem;
+  flex: 1;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.inputField label {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  color: darkgray;
+}
+
+.inputField span {
+  color: hsl(0, 100%, 50%, 50%);
+  position: relative;
+  top: 100%;
+  font-size: 13px;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.inputFieldValid {
+  font-size: 32px;
+  padding: 0.5rem;
+  flex: 1;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  transition: color 5s ease;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.inputFieldValid:focus {
+  border: 1px solid hsl(259, 100%, 65%);
+}
+
+.resultRow {
+  font-size: 90px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: oblique;
+}
+.resultRow > p {
+  line-height: normal;
+  width: auto;
+  height: auto;
+  margin: -10px;
+}
+
+.resultRow > p > span {
+  color: hsl(259, 100%, 65%);
+}
+
+.computeBtn {
+  border: none;
+  outline: none;
+  color: white;
+  background-color: hsl(259, 100%, 65%);
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -3.5rem;
+  right: 0;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+
+.computeBtn:hover {
+  background-color: black;
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: 90vw;
+    padding: 1rem;
+    border-radius: 20px 20px 100px 20px;
+  }
+
+  .dateInput {
+    gap: 1rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin: 0;
+    padding: 1.5rem 0 2.8rem 0;
+  }
+
+  .inputField {
+    width: auto;
+    gap: 0;
+  }
+  .inputFieldInvalid {
+    border: 1px solid hsl(0, 100%, 50%, 50%);
+    font-size: 17px;
+    padding: 0.3rem;
+    flex: 1;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+
+  .inputField label {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 800;
+    color: darkgray;
+    letter-spacing: 0.1rem;
+  }
+
+  .inputField span {
+    font-size: 7px;
+    margin-top: 7pxpx;
+  }
+
+  .inputFieldValid {
+    font-size: 17px;
+    padding: 0.5rem;
+    flex: 1;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    transition: color 5s ease;
+    border-radius: 8px;
+  }
+
+  .computeBtn {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: hsl(259, 100%, 65%);
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -1.75rem;
+    right: calc(50% - 1.75rem);
+    cursor: pointer;
+    transition: all 0.1s ease-out;
+  }
+
+  .computeBtn img {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .result {
+    width: 100%;
+    height: auto;
+    gap: 20px;
+    align-items: flex-start;
+    margin-top: 2rem;
+  }
+
+  .resultRow {
+    font-size: 50px;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+  }
+  .resultRow > p {
+    line-height: normal;
+    width: auto;
+    height: auto;
+  }
+  .resultRow > p > span {
+    color: hsl(259, 100%, 65%);
+  }
+}
